@@ -1,0 +1,36 @@
+/******************************************************************
+
+Stylesheet: Stylesheet for Lightweight Columns plugin
+
+******************************************************************/
+
+div.mgc + div.mgc {
+	margin-top: 2rem;
+}
+
+div.mgc > div + div {
+	margin-top: 0.5em;
+}
+
+@media only screen and (min-width: 768px) {
+
+
+	div.mgc {
+		display: -webkit-box;
+	  	display: -ms-flexbox; 
+		display: -webkit-flex;
+		display: flex;
+	}
+	div.mgc > div {
+		-webkit-box-flex: 0 1 auto;
+		-webkit-flex: 0 1 auto;
+		-ms-flex: 0 1 auto;
+		flex: 0 1 auto;
+		padding: 12px;
+	}
+	div.mgc > div + div  {
+		margin-top: 0;
+	}
+
+}
+
